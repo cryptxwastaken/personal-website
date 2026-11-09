@@ -1,0 +1,63 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f8f6f1;
+  --foreground: #18181b;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-stonebg: #f8f6f1;
+  --color-cardbg: #ffffff;
+  --color-hairline: #e4e1d7;
+  --color-ink: #18181b;
+  --color-muted: #71717a;
+  --color-body: #52525b;
+  --color-emerald: #059669;
+  --color-emerald-dark: #047857;
+  --color-emerald-light: rgba(5, 150, 105, 0.08);
+  --color-syn-keyword: #d97706;
+  --color-syn-func: #2563eb;
+  --color-syn-str: #059669;
+  --color-syn-comment: #9ca3af;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
+  --font-serif: var(--font-newsreader), Georgia, serif;
+  --font-mono: var(--font-jetbrains-mono), Consolas, monospace;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f8f6f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e4e1d7;
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #18181b;
+}
+
+.syn-keyword {
+  color: #d97706;
+  font-weight: 500;
+}
+
+.syn-func {
+  color: #2563eb;
+}
+
+.syn-str {
+  color: #059669;
+}
+
+.syn-comment {
+  color: #9ca3af;
+  font-style: italic;
+}
