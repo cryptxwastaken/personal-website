@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter, JetBrains_Mono, Newsreader } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const inter = Inter({
@@ -38,6 +39,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="bg-stonebg text-ink font-sans antialiased min-h-full selection:bg-emerald selection:text-white pb-24">
         {children}
+        <Analytics />
       </body>
     </html>
   );
